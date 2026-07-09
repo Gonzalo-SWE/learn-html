@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> A Simple Website</title>
+        <title> A Simple Form </title>
+        <style>
+            .form-button-div {
+                border: 12px outset burlywood;
+                text-align: center;
+                background-color: bisque;
+            }
+            .form-input-div{
+                border:12px outset burlywood;
+                text-align: center;
+                background-color: bisque;
+            }
+            .title{
+                text-align: center;
+            }
+            body{
+                background-color: rgb(196, 172, 137);
+            }
+            h1{
+                color: rgb(118, 84, 46);
+            }
+        </style>
     </head>
 
 
     <body> 
-        <!-- (cmd + / ) creates an automatic comment in html wherever the cursor is! -->
-        <!-- <h1>Pet Database</h1>
-        <p> Welcome! You can learn about pets here.</p>
-
-        <h2>Cats</h2>
-        <p>Info on cats</p>
-
-        <h2>Dogs</h2>
-        <ol>
-            <li>info 1</li>
-            <li>info 2</li>
-        </ol>
-        <ul>
-            <li>info 1</li>
-            <li>info 2</li>
-        </ul> -->
-
+        
         <header>
-            <!-- Usually contains logogs and navigation section-->
+            <!-- Usually contains logogs and navigation section -->
         </header>
         <main>
-           <section>  <!--Similar to headings, they create sections for inside main area of body  --> </section>
+            <h1 class="title">An Unreactive Form</h1>
+            <!-- The action attribute tells what location to send the form's data too when submitted.
+            The method attribute defines which HTTP method to send the data with (either get or post).
+            The name attribute gives an identifier for each data collected and is used when sent to url. Form data is sent as a name/value pair  -->
+            <!-- The id has same name as the for attribute in the label element. That is how control is connected to each label.
+             Whne users click on label the id pairs which of the controls to do. -->
+
+            <form action="" method="">
+                <div class="form-input-div">
+                    <p>
+                    <label for="name"> Enter Name: </label>
+                    <input type="text" id="name" name="user_name">
+                    </p>
+                    <p>
+                        <label for="mail"> Enter Email: </label>
+                        <input type="email" id="mail" name="user_email">
+                    </p>
+                    <p>
+                        <label for="msg"> Message: </label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </p>
+                </div>
+                <p>
+
+                </p>
+                <div class="form-button-div">
+                    <p>
+                        <button type="submit">Send Message</button>
+                    </p>
+                </div>
+
+            </form>
+          
         </main>
         <footer>
             <!-- copyright , links, contacts -->
         </footer>
-
-    </body>
+    
+    </body> 
 </html>
